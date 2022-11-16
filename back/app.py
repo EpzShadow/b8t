@@ -16,7 +16,6 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/upload', methods=['POST'])
-
 def upload():
     pic = request.files['pic'] #comes from html (file name is pic)
 
