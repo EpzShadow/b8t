@@ -1,5 +1,6 @@
-from flask import Flask, request
+from flask import Flask, request, Response
 from werkzeug.utils import secure_filename
+from flask import render_template
 
 from db import db_init, db
 from models import Img
@@ -30,4 +31,20 @@ def upload():
     db.session.add(img)
     db.session.commit()
 
-    return "it works.", 200
+    return "uploaded imge", 200
+   # return render_template('returnimg.html'), 200       
+
+@app.route('/<int:id>')
+def get_img(id):
+    img = Img.query.filter_by(id=id).first()
+    if not img:
+        return 'No img with that id', 404
+
+    return Response(img.img, mimetype=img.mimetype)
+
+
+# @app.route('/user/<username>')
+# def show_user(username):
+#     user = User.query.filter_by(username=username).first_or_404()
+#     return render_template('show_user.html', user=user)
+                                                                            
