@@ -3,10 +3,10 @@ import classes from "./cssfiles/Card.modules.css";
 function Card (props){
     return (
         <div className = "container">
-            <div>
-                <img src = {props.image} alt = "logo" className = "thumbnail" />
+            <div className = "image-container">
+                <img src = {props.image}  alt = "logo" className = "image"/>
             </div>
-            <div className>
+            <div className = "text-box-container">
                 <p>{props.name}</p>
             </div>
         </div>
