@@ -1,5 +1,5 @@
 import logo from './stolen.png';
-import classes from './cssfiles/MyHeader.module.css';
+import classes from '../cssfiles/MyHeader.module.css';
 import SearchBar from './SearchBar';
 function MyHeader(){
     // console.log("HERE");

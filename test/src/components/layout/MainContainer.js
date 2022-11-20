@@ -1,7 +1,8 @@
 import Card from "../Card";
+import a from "../../files/a.jpeg";
 function MainContainer (props) {
     const countries = [
-        { name: "Belgium", continent: "Europe" },
+        { name: "Belgium", continent: "Europe", image: a},
         { name: "India", continent: "Asia" },
       ];
     const searchInput = props.searchInput;
@@ -9,8 +10,7 @@ function MainContainer (props) {
     return (
         <div>{countries.filter(country => country.name.match(searchInput)).map(country => (
             <div>
-                {console.log("HEREEE")}
-              <Card name = {country.name}/>
+              <Card name = {country.name} image = {country.image}/>
             </div>
           ))}
           </div>

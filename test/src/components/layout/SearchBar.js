@@ -16,8 +16,8 @@ const SearchBar = () => {
         value={searchInput}
       />
       <div>
-        <p>Country</p>
-        <p>Continent</p>
+        {/* <p>Country</p>
+        <p>Continent</p> */}
         <MainContainer searchInput = {searchInput}/>
       </div>
     </div>
