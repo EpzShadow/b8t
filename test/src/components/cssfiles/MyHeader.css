@@ -1,0 +1,18 @@
+.header-container{
+    /* display: flex; */
+    align-items: center;
+}
+.logo-image{
+    height: 50px;
+}
+.test{
+    background-color: red;
+}
+.searchbar-logo-container{
+    display:flex;
+}
+.cards-plural{
+    display: flex;
+    flex-wrap: wrap;
+}
+

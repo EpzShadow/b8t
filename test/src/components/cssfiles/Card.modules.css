@@ -1,38 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap');
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-.container{
-    margin-top: 10px;
-    background-color: red;
-    height: 170px;
-    width: 150px;
-    border-radius: 10px;
+.card-container{
+    /* margin-top: 12px; */
+    /* background-color: red; */
+    height: 150px;
+    width: 130px;
+    border-radius: 5px;
     display: inline-block;
+    margin: 12px 10px 10px 12px;
 }
 .image-container{
     background-color: blue;
-    height: 140px;
-    width: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.text-box-container{
-    width: 150px;
-    height: auto;
-    margin-top: -10px;
-    text-align: center;
+    height: 130px;
+    width: 130px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-.image{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.text-box-container{
+    width: 130px;
+    height: 15px;
+    margin-top: -12px;
+    text-align: center;
+    background-color: #B2AFAE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.card-image{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     /* max-width: 100%; */
     max-height: 100%;
     flex-shrink: 0;
     object-fit: cover;
+}
+.card-subtext{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px;
+    /* background-color: grey; */
 }
