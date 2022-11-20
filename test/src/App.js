@@ -1,27 +1,14 @@
-// import React from 'react';
-// import Home from "./pages/Home";
-// import Edit from "./pages/Edit";
-// import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import MyHeader from "./components/layout/MyHeader";
+import MainContainer from "./components/layout/MainContainer";
+import AddButton from "./components/layout/AddButton";
+function App() {
+  //localhost:3000/
+  return (
+    <div>
+      <MyHeader />
+      <AddButton />
+    </div>
+  );
+}
 
-// const App = () => {
-
-//     return (
-//       <div className="app">
-//         <Router>
-//           <Switch>
-//             <Route exact path = "/">
-//               <Home />
-//             </Route> 
-//             <Route path = "/edit">
-//               <Edit />
-//             </Route>
-//           </Switch>
-//         </Router>
-
-
-
-//       </div>
-//     );
-//   }
-
-//   export default App;
+export default App;
